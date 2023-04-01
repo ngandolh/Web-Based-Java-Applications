@@ -1,0 +1,43 @@
+Parameter: 
+1. txtText - 
+th1: String(chuỗi rỗng) do value="" chưa chạy: mặc định 
+th2: user nhập giá trị, user để trống => Null
+2. txtPassword - 2 trường hợp tùy theo giá trị người dùng nhập
+th1: value="" chưa chạy => String chuỗi rỗng
+th2: user đã nhập, đưa trỏ chuột vào ô form => Null
+
+3. txtHidden - chuỗi rỗng - do hidden người dùng hoàn toàn ko thấy được
+
+4. chkCheck - trị: value="ON" default: đã được check: ON
+Nếu người dùng bỏ check, ko dc check => Null
+ 
+5. rdoStatus - trị:3 value="Single", "Married", "Divorsed" - default: được đã check "Single"
+Nếu checked = Checked ko có thì th2: người dùng bỏ nhập => Null
+
+6. txtCombo - 2 value: "Servlet", "EJB" - String rỗng 
+Nếu ko có checked thì chọn thằng đầu tiên làm default => Default: Servlet
+
+7. txtList - 3 value "Servlet", "EJB", "Java"
+Tại thời điểm có nhiều hơn 1 trị được chọn, nó convert thành gì để đưa về phía server
+Cấu trúc của thành phần Parameter có dạng gì: Name = value
+=> Nhưng giờ có 2 value trở lên: 
+txtList = servlet & txtList = EJB 
+=> Cho phép đặt trùng tên, nhìn thấy ở phía Client ex: txtList
+Nhưng ở phía Server: parameter biến thành mảng: name[] = {Servlet, EJB}.
+=> Mảng dc tạo ra ko biết thứ tự giá trị được truyền vào.
+
+8. txtArea - "This is a form parameters demo!!!" - do ko có value trong control nên nó lấy thân tag làm value.
+
+9. txtB - 
+ko có value trong control, ko có phần tag trong control
+=> Cấm viết kiểu này, trình duyệt E: Submit Query
+				Chrome: Submit
+=> ko cố định trình duyệt, ko biết cái mẹ gì làm luôn
+
+10. action - trị: value="Register" - String rỗng chưa chạy
+th2: Người dùng bỏ qua => Null
+
+11. txtB - .... no value => ko parameter.
+type="reset" là xóa trắng ở phía Client, ko phải parameter.
+
+12. txtB - chỉ thực hiện JavaScript function ở phía Client, ko phải Parameters.
