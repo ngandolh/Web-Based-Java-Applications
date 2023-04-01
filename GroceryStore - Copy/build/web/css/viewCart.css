@@ -1,0 +1,109 @@
+/*reset css*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(216, 237, 255, 0.75);
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    margin: 0 30px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header .header-link a {
+    text-decoration: none;
+    color: rgba(147, 17, 17, 0.992);
+    font-weight: 700;
+}
+
+.content {    
+    width: 100%;
+}
+
+
+.button {
+    width: 18%;
+    padding: 10px 20px;
+    background: black;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: none;
+}
+
+.content {
+    width: 100%;
+}
+
+.content .table {
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 30px;
+    border: 1px solid black;
+    font-size: 18px;
+    height: 100%;
+    width: 100%;
+}
+
+.logout a:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+.removeBtn {
+    border: none;
+    text-align: right;
+}
+
+.table thead {
+    background-color: #2a6592;
+    color: #fff;
+}
+
+
+.table thead th,td {
+    border: 1px solid black;
+    padding: 30px;
+}
+
+.table tr td input {
+    width: 100%;
+    padding: 15px 30px;
+}
+
+.logout a {
+    text-decoration: none;
+    color: #fff;
+    background: black;
+    font-weight: 700;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 15px;
+}

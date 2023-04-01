@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Register Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./css/index.css" rel="stylesheet"/>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="login-container">
+                <div class="login-header">
+                    <h1>Sign Up</h1>
+                </div>
+                <form action="MainServlet" class="form">
+                    <div class="form-item">
+                        <input type="text" placeholder="Enter username" name="txtUsername" required>
+                    </div>
+                    <div class="form-item">
+                        <input type="password" placeholder="Enter password" name="txtPassword" required>
+                    </div>
+                    <div class="form-item">
+                        <input type="text" placeholder="Enter lastname" name="txtLastname" required>
+                    </div>
+                    <button type="submit" value="SignUp" name="btAction">Sign Up</button>
+                </form>
+                <div class="login-footer">
+                    Already have an account? <a href="./login.html">Login now!</a>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

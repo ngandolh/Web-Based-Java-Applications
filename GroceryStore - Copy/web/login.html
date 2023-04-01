@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Login Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./css/index.css" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="login-container">
+                <div class="login-header">
+                    <h1>Login Page</h1>
+                </div>
+                <form action="MainServlet" class="form">
+                    <div class="form-item">
+                        <label>Username</label>
+                        <input type="text" name="txtUsername" value="" placeholder="Enter your username" />
+                    </div>
+                    <div class="form-item">
+                        <label>Password</label>
+                        <input type="password" name="txtPassword" value="" placeholder="Enter your password" />                
+                    </div>
+                    <button type="submit" value="Login" name="btAction" >Log in</button>
+                    <button type="reset" value="Reset" name="btAction" >Reset</button>
+
+                </form>
+                <div class="login-footer">
+                    Does not have an account?
+                    <a href="./register.html">Sign Up</a><br/>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
+

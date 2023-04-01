@@ -1,0 +1,159 @@
+/*reset css*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    margin: 25px 0;
+}
+
+.login-container {
+    position: relative;
+    width: 500px;
+    padding: 45px;
+    border-radius: 10px;
+    background-color: #ccc;
+}
+
+.login-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.login-header h1 {
+    font-size: 40px;
+}
+
+.login-header div,
+.login-footer {
+    font-size: 16px;
+    color: rgba(71, 67, 67, 0.85);;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login-container a {
+    text-decoration: none;
+    color: rgba(147, 17, 17, 0.992);
+    font-weight: 700;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form .form-item{
+    position: relative;
+    margin: 8px 0;
+}
+
+.form button {
+    padding: 15px;
+    background: black;
+    margin-top: 10px;
+    color: white;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.form button:hover{
+    background-color: green;
+    cursor: pointer;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: none;
+}
+
+
+.form .form-item .form-item-icon {
+    position: absolute;
+    top: .82rem;
+    left: 1.4rem;
+    font-size: 1.3rem;
+    opacity: .4;
+}
+
+.form .checkbox{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.form .form-item-other {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(1rem*.8);
+    margin-bottom: .5rem;
+
+}
+
+
+.login-container input[type="checkbox"]{
+    width: 16px;
+    height: 16px;
+    accent-color: black;
+}
+
+
+.login-card-social{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.login-card-social > div{
+    opacity: .8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: calc(1rem*.8);
+}
+
+.login-card-social-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.login-card-social-btn a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    width: 50px;
+    height: 50px;
+    background: rgba(255,255,255,.6);
+    border-radius: 100px;
+    transition: all .5;
+}
+
+.login-card-social-btn a:hover{
+    background: white;
+    transform: scale(1.1);
+}
+@media (max-width: 768px){
+    body{
+        padding: 2rem 0;
+    }
+    .login-card{
+        width: 300px;
+        padding: 2rem;
+    }
+}
